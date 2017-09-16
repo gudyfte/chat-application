@@ -1,4 +1,5 @@
-//This server_frame.java is used to support text transfer. The server receives connection from clients. It supports forwarding of message from client to client
+//This server_frame.java file is to create a chat server which supports text transfer. 
+//The server receives connection from clients. It supports forwarding of message from client to client
 
 import java.io.*;
 import java.net.*;
