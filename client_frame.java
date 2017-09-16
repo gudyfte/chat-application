@@ -36,7 +36,7 @@ public class client_frame extends javax.swing.JFrame {
     
     public void Disconnect(){
         try{
-            //ta_chat.append("\n" + username + " Disconnected.\n");
+            
             sock.close();
         }catch(Exception ex){
             ta_chat.append("Failed to disconnect. \n");
@@ -456,7 +456,7 @@ public class client_frame extends javax.swing.JFrame {
     }                                         
 
     private void b_disconnectActionPerformed(java.awt.event.ActionEvent evt) {                                             
-        // TODO add your handling code here:
+        
         if(isConnected==true){
             username=tf_username.getText();
             tf_username.setEditable(false);
@@ -483,7 +483,7 @@ public class client_frame extends javax.swing.JFrame {
     }                                            
 
     private void b_uploadActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        
         JFileChooser chooser=new JFileChooser();
         chooser.showOpenDialog(null);
         File f=chooser.getSelectedFile();
@@ -492,7 +492,6 @@ public class client_frame extends javax.swing.JFrame {
     }                                        
 
     private void b_sendActionPerformed(java.awt.event.ActionEvent evt) {                                       
-        // TODO add your handling code here:
   
         String nothing="";
         if((tf_chat.getText()).equals(nothing)){
@@ -514,7 +513,7 @@ public class client_frame extends javax.swing.JFrame {
     }                                      
                                   
     private void b_openActionPerformed(java.awt.event.ActionEvent evt) {                                       
-        // TODO add your handling code here:
+        
      if(tf_download.getText().endsWith(".docx") || tf_download.getText().endsWith(".txt") || tf_download.getText().endsWith(".s") || tf_download.getText().endsWith(".java") || tf_download.getText().endsWith(".cpp")){
       String nothing="";
         if((tf_download.getText()).equals(nothing)){
@@ -539,21 +538,21 @@ public class client_frame extends javax.swing.JFrame {
     }                                      
 
     private void ta_chatMouseReleased(java.awt.event.MouseEvent evt) {                                      
-        // TODO add your handling code here:
+        
         if(evt.isPopupTrigger()){
             jPopupMenu3.show(this,evt.getX(),evt.getY());
         }
     }                                     
 
     private void tf_chatMouseReleased(java.awt.event.MouseEvent evt) {                                      
-        // TODO add your handling code here:
+        
         if(evt.isPopupTrigger()){
             jPopupMenu1.show(this,evt.getX(),evt.getY());
         }
     }                                     
 
     private void ta_usersMouseReleased(java.awt.event.MouseEvent evt) {                                       
-        // TODO add your handling code here:
+        
         
         if(evt.isPopupTrigger()){
             jPopupMenu4.show(this,evt.getX(),evt.getY());
@@ -562,24 +561,24 @@ public class client_frame extends javax.swing.JFrame {
     }                                      
 
     private void tf_downloadMouseReleased(java.awt.event.MouseEvent evt) {                                          
-        // TODO add your handling code here:
+        
         if(evt.isPopupTrigger()){
             jPopupMenu2.show(this,evt.getX(),evt.getY());
         }
     }                                         
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+        
         tf_chat.copy();
     }                                          
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here: 
+         
         tf_chat.paste();
     }                                          
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+        
         tf_chat.cut();
     }                                          
 
@@ -589,32 +588,32 @@ public class client_frame extends javax.swing.JFrame {
     }                                          
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+        
         tf_download.copy();
     }                                                                         
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+        
         tf_download.selectAll();
     }                                          
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+        
         ta_chat.copy();
     }                                          
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+        
         ta_chat.selectAll();
     }                                          
 
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
+        
         ta_users.copy();
     }                                          
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {                                            
-        // TODO add your handling code here:
+        
         ta_users.selectAll();
     }                                           
 /**/
@@ -654,7 +653,7 @@ public class client_frame extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify                     
+    // Variables declaration                     
     private javax.swing.JButton b_connect;
     private javax.swing.JButton b_disconnect;
     private javax.swing.JButton b_open;
