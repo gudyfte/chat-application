@@ -250,7 +250,7 @@ public class server_frame extends javax.swing.JFrame {
             }
         } 
     }
-    // Variables declaration - do not modify                     
+    // Variables declaration                  
     private javax.swing.JButton b_start;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea ta_chat;
