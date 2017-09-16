@@ -1,6 +1,7 @@
 //This client_frame.java file is to create a chat client which transfers text and files. 
 //This chat client connects to other clients as well as connecting to the server.
 
+package chat_client;
 import java.net.*;
 import java.io.*;
 import java.util.*;
