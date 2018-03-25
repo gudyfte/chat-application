@@ -14,8 +14,6 @@ import java.awt.Color;
 import java.awt.*;
 import javax.swing.*;
 
-import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
 /**
  *
  * @author Zhu
@@ -116,13 +114,6 @@ public class client_frame extends javax.swing.JFrame {
                               ta_chat.append("\n\tTime: " + data[1] + "\n");
             
                               ta_chat.append(data[0] + ":\n\n" + data[2]);
-                            }
-                            else if(data[2].toLowerCase().endsWith(".docx")){
-                              XWPFDocument doc=new XWPFDocument(new FileInputStream(data[2]));
-                              XWPFWordExtractor extract=new XWPFWordExtractor(doc);
-                              ta_chat.append("\n\tTime: " + data[1] + "\n");
-                              ta_chat.append(data[0] + ":\n\n");
-                              ta_chat.append(extract.getText());
                             }
                          }
                 }
