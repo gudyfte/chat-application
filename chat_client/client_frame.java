@@ -340,7 +340,7 @@ public class client_frame extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("The file type must be .docx, text document (.txt, Notepad), WordPad");
+        jLabel3.setText("The file type must be text document (.txt, Notepad, WordPad)");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
